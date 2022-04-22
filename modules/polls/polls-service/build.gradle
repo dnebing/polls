@@ -1,0 +1,12 @@
+dependencies {
+	compile project(":modules:polls:polls-api")
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileOnly group: "com.liferay.portal", name: "com.liferay.portal.impl"
+}
+
+buildService {
+	apiDir = "../polls-api/src/main/java"
+}
+
+group = "com.liferay.polls"

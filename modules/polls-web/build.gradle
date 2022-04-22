@@ -1,0 +1,9 @@
+dependencies {
+	compileInclude group: "org.jfree", name: "jcommon", version: "1.0.24"
+	compileInclude group: "org.jfree", name: "jfreechart", version: "1.0.19"
+
+	compileOnly group: "com.liferay.portal", name: "release.dxp.api"
+	compileOnly group: "javax.servlet.jsp", name: "javax.servlet.jsp-api", version: "2.3.1"
+
+	compileOnly project(":modules:polls:polls-api")
+}
